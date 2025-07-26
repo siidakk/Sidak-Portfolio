@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* Add this in your global CSS file */
+[id] {
+  scroll-margin-top: 5rem; /* adjust according to your navbar height */
+}
