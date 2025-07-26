@@ -18,7 +18,7 @@ function Home() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <div className="p-6 w-[80%] mx-auto font-sans bg-black-900 text-gray-100 min-h-screen scroll-smooth">
+    <div className="p-6 w-[80%] mx-auto font-sans bg-white text-black dark:bg-black dark:text-gray-100 min-h-screen scroll-smooth">
 
       {/* Navbar */}
       <motion.nav
