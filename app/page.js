@@ -116,7 +116,7 @@ function Home() {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h3 className="text-xl font-semibold text-indigo-300">Software Developer Intern – CormSquare</h3>
+        <h3 className="text-xl font-semibold text-indigo-800 dark:text-indigo-300">Software Developer Intern – CormSquare</h3>
         <p className="text-gray-700 dark:text-gray-400 text-sm">Technology, Information and Internet · Bangalore, Karnataka · July 2025</p>
         <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm mt-2 space-y-1">
           <li>Designed and developed a comprehensive Asset Management Website for internal and client use.</li>
@@ -165,12 +165,12 @@ function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: idx * 0.2 }}
           >
-            <h3 className="text-xl font-semibold mb-3 text-indigo-300">{proj.title}</h3>
+            <h3 className="text-xl font-semibold mb-3 text-indigo-800 dark:text-indigo-300">{proj.title}</h3>
             <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{proj.desc}</p>
             {proj.github && (
               <div className="flex gap-3">
                 <a href={proj.github} target="_blank">
-                  <button className="px-4 py-1 text-sm rounded-lg border border-indigo-400 text-indigo-300 hover:bg-indigo-600/20 transition">
+                  <button className="px-4 py-1 text-sm rounded-lg border border-indigo-400 text-indigo-800 dark:text-indigo-300 hover:bg-indigo-600/20 transition">
                     GitHub
                   </button>
                 </a>
@@ -210,7 +210,7 @@ function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.2 }}
           >
-            <h4 className="font-semibold text-lg text-indigo-300 mb-3">{skill.title}</h4>
+            <h4 className="font-semibold text-lg text-indigo-800 dark:text-indigo-300 mb-3">{skill.title}</h4>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
               {skill.items.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -240,7 +240,7 @@ function Home() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
-          <h3 className="text-xl font-semibold text-indigo-300 mb-2">Vellore Institute of Technology, Vellore</h3>
+          <h3 className="text-xl font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Vellore Institute of Technology, Vellore</h3>
           <p className="text-gray-700 dark:text-gray-400 text-sm">B. Tech. Computer Science - AI & ML (08/2023 - Present)</p>
           <p className="text-gray-700 dark:text-gray-300 text-sm mt-2 leading-relaxed">
             1st Semester: 8.67 GPA<br />
@@ -252,13 +252,13 @@ function Home() {
         </div>
 
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
-          <h3 className="text-xl font-semibold text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
+          <h3 className="text-xl font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
           <p className="text-gray-700 dark:text-gray-400 text-sm">12th Class (04/2022 - 03/2023)</p>
           <p className="text-gray-700 dark:text-gray-300 text-sm">Percentage: 92%</p>
         </div>
 
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
-          <h3 className="text-xl font-semibold text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
+          <h3 className="text-xl font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
           <p className="text-gray-700 dark:text-gray-400 text-sm">10th Class (04/2020 - 03/2021)</p>
           <p className="text-gray-700 dark:text-gray-300 text-sm">Percentage: 92%</p>
         </div>
