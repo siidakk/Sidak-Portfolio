@@ -49,7 +49,7 @@ function Home() {
           onClick={scrollToTop}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="fixed bottom-6 right-6 p-3 rounded-full bg-indigo-600 text-white shadow-lg hover:bg-indigo-700 transition z-50"
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-indigo-600 text-black dark:text-white shadow-lg hover:bg-indigo-700 transition z-50"
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>
@@ -62,7 +62,7 @@ function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-5xl font-extrabold mb-4 text-white">Sidak Arora</h1>
+          <h1 className="text-5xl font-extrabold mb-4 text-black dark:text-white">Sidak Arora</h1>
           <p className="text-xl font-bold mb-4 text-blue-500">Aspiring Full Stack Developer | B.Tech CSE</p>
           <p className="text-base mb-6 text-gray-400 leading-relaxed">
             Third-year Computer Science student with a keen interest in programming and co-curricular activities.
@@ -71,7 +71,7 @@ function Home() {
           </p>
           <div className="flex gap-5 mb-6">
             <a href="https://github.com/siidakk" target="_blank">
-              <Github className="w-6 h-6 text-white hover:text-gray-200 transition duration-300" />
+              <Github className="w-6 h-6 text-black dark:text-white hover:text-gray-200 transition duration-300" />
             </a>
             <a href="https://www.linkedin.com/in/sidakarora" target="_blank">
               <Linkedin className="w-6 h-6 text-blue-400 hover:text-blue-500 transition duration-300" />
@@ -101,7 +101,7 @@ function Home() {
       {/* Work Experience Section */}
       <motion.h2
         id="work"
-        className="text-4xl font-bold mt-16 mb-6 text-white"
+        className="text-4xl font-bold mt-16 mb-6 text-black dark:text-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -117,8 +117,8 @@ function Home() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <h3 className="text-xl font-semibold text-indigo-300">Software Developer Intern – CormSquare</h3>
-        <p className="text-gray-400 text-sm">Technology, Information and Internet · Bangalore, Karnataka · July 2025</p>
-        <ul className="list-disc list-inside text-gray-300 text-sm mt-2 space-y-1">
+        <p className="text-gray-700 dark:text-gray-400 text-sm">Technology, Information and Internet · Bangalore, Karnataka · July 2025</p>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm mt-2 space-y-1">
           <li>Designed and developed a comprehensive Asset Management Website for internal and client use.</li>
           <li>Implemented role-based access (Admin, Customer, Company Client) using ASP.NET Identity.</li>
           <li>Developed asset lifecycle management: add/update/delete assets, manage pricing and availability.</li>
@@ -133,7 +133,7 @@ function Home() {
 
 
       {/* Projects Section */}
-      <h2 id="projects" className="text-4xl font-bold mt-16 mb-8 text-white">Projects</h2>
+      <h2 id="projects" className="text-4xl font-bold mt-16 mb-8 text-black dark:text-white">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {[
           {
@@ -166,7 +166,7 @@ function Home() {
             transition={{ duration: 0.6, delay: idx * 0.2 }}
           >
             <h3 className="text-xl font-semibold mb-3 text-indigo-300">{proj.title}</h3>
-            <p className="text-sm text-gray-300 mb-4">{proj.desc}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{proj.desc}</p>
             {proj.github && (
               <div className="flex gap-3">
                 <a href={proj.github} target="_blank">
@@ -186,7 +186,7 @@ function Home() {
       </div>
 
       {/* Skills Section */}
-      <h2 id="skills" className="text-4xl font-bold mt-16 mb-6 text-white">Skills</h2>
+      <h2 id="skills" className="text-4xl font-bold mt-16 mb-6 text-black dark:text-white">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
         {[
           {
@@ -211,7 +211,7 @@ function Home() {
             transition={{ duration: 0.5, delay: idx * 0.2 }}
           >
             <h4 className="font-semibold text-lg text-indigo-300 mb-3">{skill.title}</h4>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
               {skill.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
@@ -224,7 +224,7 @@ function Home() {
       {/* Education Section */}
       <motion.h2
       id="education"
-        className="text-4xl font-bold mt-16 mb-6 text-white"
+        className="text-4xl font-bold mt-16 mb-6 text-black dark:text-white"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -241,8 +241,8 @@ function Home() {
       >
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
           <h3 className="text-xl font-semibold text-indigo-300 mb-2">Vellore Institute of Technology, Vellore</h3>
-          <p className="text-gray-400 text-sm">B. Tech. Computer Science - AI & ML (08/2023 - Present)</p>
-          <p className="text-gray-300 text-sm mt-2 leading-relaxed">
+          <p className="text-gray-700 dark:text-gray-400 text-sm">B. Tech. Computer Science - AI & ML (08/2023 - Present)</p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm mt-2 leading-relaxed">
             1st Semester: 8.67 GPA<br />
             2nd Semester: 8.45 GPA<br />
             3rd Semester: 8.86 GPA<br />
@@ -253,14 +253,14 @@ function Home() {
 
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
           <h3 className="text-xl font-semibold text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
-          <p className="text-gray-400 text-sm">12th Class (04/2022 - 03/2023)</p>
-          <p className="text-gray-300 text-sm">Percentage: 92%</p>
+          <p className="text-gray-700 dark:text-gray-400 text-sm">12th Class (04/2022 - 03/2023)</p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm">Percentage: 92%</p>
         </div>
 
         <div className="bg-white/10 backdrop-blur-md p-5 rounded-xl border border-gray-700 shadow-md">
           <h3 className="text-xl font-semibold text-indigo-300 mb-2">Delhi Public School, Faridabad</h3>
-          <p className="text-gray-400 text-sm">10th Class (04/2020 - 03/2021)</p>
-          <p className="text-gray-300 text-sm">Percentage: 92%</p>
+          <p className="text-gray-700 dark:text-gray-400 text-sm">10th Class (04/2020 - 03/2021)</p>
+          <p className="text-gray-700 dark:text-gray-300 text-sm">Percentage: 92%</p>
         </div>
      </motion.div>
 
@@ -285,8 +285,8 @@ function Home() {
   </div>
 
   <p>
-    <span className="font-semibold text-white">Sidak Arora © 2025.</span>{' '}
-    Designed & Developed by <span className="font-semibold text-white">Sidak Arora</span>
+    <span className="font-semibold text-black dark:text-white">Sidak Arora © 2025.</span>{' '}
+    Designed & Developed by <span className="font-semibold text-black dark:text-white">Sidak Arora</span>
   </p>
 </footer>
 
