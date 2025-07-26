@@ -64,7 +64,7 @@ function Home() {
         >
           <h1 className="text-5xl font-extrabold mb-4 text-black dark:text-white">Sidak Arora</h1>
           <p className="text-xl font-bold mb-4 text-blue-500">Aspiring Full Stack Developer | B.Tech CSE</p>
-          <p className="text-base mb-6 text-gray-400 leading-relaxed">
+          <p className="text-base mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">
             Third-year Computer Science student with a keen interest in programming and co-curricular activities.
             Passionate about web and software development, aspiring to become a full-stack developer.
             Eager to learn new technologies and build impactful projects.
